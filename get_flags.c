@@ -4,7 +4,7 @@
  * get_flags - Function that calculates active flags
  * @format: Formatted string in which to print the arguments.
  * @i: parameter.
- * 
+ *
  * Return: returns active flags.
  */
 int get_flags(const char *format, int *i)
@@ -26,7 +26,7 @@ int get_flags(const char *format, int *i)
 
 		if (FLAGS_CHAR[count] == 0)
 			break;
-	
+
 		curr_i++;
 	}
 

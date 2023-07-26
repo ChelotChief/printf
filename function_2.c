@@ -54,7 +54,7 @@ int print_pointer(va_list types, char buffer[],
  * @types: List of arguments.
  * @buffer: Buffer array.
  * @flags:  Calculates active flags.
- * @width: width. 
+ * @width: width.
  * @precision: Precision specification variable.
  * @size: Size specifier variable.
  * Return: Print number of chars.
@@ -127,7 +127,7 @@ int print_reverse(va_list types, char buffer[],
 		write(1, &z, 1);
 		count++;
 	}
-	return 0;
+	return (0);
 }
 /**
  * print_rot13string - Function thqt prints a string in rot13.

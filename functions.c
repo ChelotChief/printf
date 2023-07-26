@@ -10,11 +10,14 @@
  * @size: Size variable
  * Return: Returns the number of chars
  */
-int print_char(va_list types, char buffer[], int flags, int width, int precision, int size)
+
+int print_char(va_list types, char buffer[],
+int flags, int width, int precision, int size)
 {
 	char c = va_arg(types, int);
 
 	return (handle_write_char(c, buffer, flags, width, precision, size));
+
 /**
  * print_string - Function that prints a string.
  * @types: List of arguments.
@@ -100,6 +103,7 @@ int print_percent(va_list types, char buffer[],
  * @size: Size specifier variable.
  * Return: Returns the number of chars.
  */
+
 int print_int(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
@@ -132,6 +136,7 @@ int print_int(va_list types, char buffer[],
 
 	return (write_number(is_negative, index, buffer, flags, width, precision, size));
 }
+
 /**
  * print_binary - Function that prints
  * an unsigned number.
@@ -143,6 +148,7 @@ int print_int(va_list types, char buffer[],
  * @size: Size specifier variable
  * Return: returns the number of char.
  */
+
 int print_binary(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
